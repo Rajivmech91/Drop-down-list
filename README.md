@@ -24,24 +24,20 @@
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		
-		
 		Select seatingclass = new Select (driver.findElement(By.id("gi_class")));
-		//List <WebElement> elementCount = seatingclass.getOptions();
-		//System.out.println(elementCount.size());
-		 List<WebElement> dropDwonList = new ArrayList<WebElement>();
-	        dropDwonList = seatingclass.getOptions();
+		List <WebElement> elementCount = seatingclass.getOptions();
+		System.out.println(elementCount.size());
 		
-	        for(WebElement temp:dropDwonList)
-	        {
-	            
-	        	seatingclass.selectByValue("B");
-	        }
-	   
 	        
-		for (int i = 0; i < dropDwonList.size(); i++)
+		for (int i = 0; i < elementCount.size(); i++)
 	   {
 	      new Select(driver.findElement(By.id("gi_class"))).selectByIndex(i);
 	    }
+		
+		seatingclass.selectByVisibleText ("Premium Economy");
+		System.out.println("Premium Economy selected");
+		//showMessageDialog(null, "Check Now!");
+		//Thread.sleep(3000);
 		
 		seatingclass.selectByVisibleText ("Premium Economy");
 		System.out.println("Premium Economy selected");

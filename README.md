@@ -1,18 +1,18 @@
-package selectclasspackage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.junit.Test;
-//import org.junit.Before;
-import static javax.swing.JOptionPane.showMessageDialog;
+	package selectclasspackage;
+	import org.openqa.selenium.By;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.firefox.FirefoxDriver;
+	import org.openqa.selenium.support.ui.Select;
+	import org.junit.Test;
+	//import org.junit.Before;
+	import static javax.swing.JOptionPane.showMessageDialog;
 
-import java.util.ArrayList;
-import java.util.List;
+	import java.util.ArrayList;
+	import java.util.List;
 
-import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.WebElement;
 
-public class selectclass {
+	public class selectclass {
 	
 	@Test
 	public void Sample () throws InterruptedException {
